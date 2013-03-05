@@ -31,9 +31,8 @@ in space, [engineers use duct tape][20] and with [symfony 2.3][5]
 you can do that in an elegant and clean way, thanx Fabien you're awsum.
 
 ## Y U NO use Silex ?
-Yes, [Silex][7] is cool, I use it for my small
-projects when I have time. But who can say what is the best : A fat Silex or a light
-Symfony ? I prefer light Symfony. Now you choose.
+Yes, [Silex][7] is cool. But who can say what is the best : A fat Silex or a light
+Symfony ? I prefer light Symfony. Now you can choose.
 
 ## Contributing
 Since this repository is mainly for me, I don't think it will evolve, it is already
