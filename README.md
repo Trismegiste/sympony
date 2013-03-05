@@ -16,7 +16,7 @@ anti-pattern : the [Inner-platform Effect][16]
 
 ### With Composer
 
-    php composer.phar create-project trismegiste/sympony --stability=dev MyApp
+    php composer.phar create-project trismegiste/sympony MyApp 2.2.x-dev
 
 ## Start hacking
 This edition is intended to be a **seed** to grow your own project very fast !
