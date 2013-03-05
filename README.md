@@ -14,13 +14,9 @@ anti-pattern : the [Inner-platform Effect][16]
 
 ## Installing this edition
 
-### Install Composer
+### With Composer
 
-    curl -s https://getcomposer.org/installer | php
-
-### Create your project
-
-    php composer.phar create-project trismegiste/sf2ffbp --stability=dev MyApp
+    php composer.phar create-project trismegiste/sympony --stability=dev MyApp
 
 ## Start hacking
 This edition is intended to be a **seed** to grow your own project very fast !
