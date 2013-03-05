@@ -1,6 +1,7 @@
 ![Bronyspeak](./app/Resources/doc/img/sympony.png)
 
 ## What
+
 Welcome to my Symfony 2.3 Fat Free Boilerplate - a release of [symfony 2.3][5]
 that you can use as the skeleton for your new applications when
 you don't need all the bundles of the Universe.
@@ -82,21 +83,15 @@ All libraries and bundles included in the Symfony Standard Edition are
 released under the MIT or BSD license.
 
 Enjoy!
-=======
 
-[1]:  http://symfony.com/doc/2.3/book/installation.html
+[1]:  http://symfony.com/doc/master/book/installation.html
 [2]:  http://getcomposer.org/
-[3]:  http://symfony.com/download
-[4]:  http://symfony.com/doc/2.3/quick_tour/the_big_picture.html
-[5]:  http://symfony.com/doc/2.3/index.html
-[6]:  http://symfony.com/doc/2.3/bundles/SensioFrameworkExtraBundle/index.html
-[7]:  http://symfony.com/doc/2.3/book/doctrine.html
-[8]:  http://symfony.com/doc/2.3/book/templating.html
-[9]:  http://symfony.com/doc/2.3/book/security.html
-[10]: http://symfony.com/doc/2.3/cookbook/email.html
-[11]: http://symfony.com/doc/2.3/cookbook/logging/monolog.html
-[12]: http://symfony.com/doc/2.3/cookbook/assetic/asset_management.html
-[13]: http://symfony.com/doc/2.3/bundles/SensioGeneratorBundle/index.html
+[5]:  http://symfony.com/doc/master/index.html
+[7]:  http://silex.sensiolabs.org/
+[8]:  http://symfony.com/doc/master/book/templating.html
+[9]:  http://symfony.com/doc/master/book/security.html
+[11]: http://symfony.com/doc/master/cookbook/logging/monolog.html
+[12]: http://symfony.com/doc/master/cookbook/assetic/asset_management.html
 [16]: http://en.wikipedia.org/wiki/Inner-platform_effect
 [17]: http://twitter.github.com/bootstrap/
 [18]: https://github.com/Trismegiste/DokudokiBundle
