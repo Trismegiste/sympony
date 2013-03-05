@@ -27,5 +27,5 @@ monolog:
 assetic:
     use_controller: true
 
-#swiftmailer:
-#    delivery_address: me@example.com
+dokudoki:
+    database: Sf2ffbp_%developer.name%
