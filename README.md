@@ -1,137 +1,71 @@
-Symfony Standard Edition
-========================
+![Bronyspeak](./app/Resources/doc/img/sympony.png)
 
-Welcome to the Symfony Standard Edition - a fully-functional Symfony2
-application that you can use as the skeleton for your new applications.
+## What
+Welcome to my Symfony 2.3 Fat Free Boilerplate - a release of [symfony 2.3][5]
+that you can use as the skeleton for your new applications when
+you don't need all the bundles of the Universe.
 
-This document contains information on how to download, install, and start
-using Symfony. For a more detailed explanation, see the [Installation][1]
-chapter of the Symfony Documentation.
+When you need to start a project in 15 seconds, use this release.
+It does not include heavy & slow components like Doctrine or Swiftmailer.
 
-1) Installing the Standard Edition
-----------------------------------
+All components extending Annotations are removed because it is a known
+anti-pattern : the [Inner-platform Effect][16]
 
-When it comes to installing the Symfony Standard Edition, you have the
-following options.
+## Installing this edition
 
-### Use Composer (*recommended*)
+### Install Composer
 
-As Symfony uses [Composer][2] to manage its dependencies, the recommended way
-to create a new project is to use it.
+    curl -s https://getcomposer.org/installer | php
 
-If you don't have Composer yet, download it following the instructions on
-http://getcomposer.org/ or just run the following command:
+### Create your project
 
-    curl -s http://getcomposer.org/installer | php
+    php composer.phar create-project trismegiste/sf2ffbp --stability=dev MyApp
 
-Then, use the `create-project` command to generate a new Symfony application:
+## Start hacking
+This edition is intended to be a **seed** to grow your own project very fast !
 
-    php composer.phar create-project symfony/framework-standard-edition path/to/install
+It is not intended to build your app *on* it but *in* it. Modify, redefine or delete
+files, it is for you ! Yes it sounds like [duct tape programing][19] but even
+in space, [engineers use duct tape][20] and with [symfony 2.3][5]
+you can do that in an elegant and clean way, thanx Fabien you're awsum.
 
-Composer will install Symfony and all its dependencies under the
-`path/to/install` directory.
+## Y U NO use Silex ?
+Yes, [Silex][7] is cool, I use it for my small
+projects when I have time. But who can say what is the best : A fat Silex or a light
+Symfony ? I prefer light Symfony. Now you choose.
 
-### Download an Archive File
+## Contributing
+Since this repository is mainly for me, I don't think it will evolve, it is already
+very specific. Too more features will be pointless.
 
-To quickly test Symfony, you can also download an [archive][3] of the Standard
-Edition and unpack it somewhere under your web server root directory.
+## What's inside?
 
-If you downloaded an archive "without vendors", you also need to install all
-the necessary dependencies. Download composer (see above) and run the
-following command:
-
-    php composer.phar install
-
-2) Checking your System Configuration
--------------------------------------
-
-Before starting coding, make sure that your local system is properly
-configured for Symfony.
-
-Execute the `check.php` script from the command line:
-
-    php app/check.php
-
-The script returns a status code of `0` if all mandatory requirements are met,
-`1` otherwise.
-
-Access the `config.php` script from a browser:
-
-    http://localhost/path/to/symfony/app/web/config.php
-
-If you get any warnings or recommendations, fix them before moving on.
-
-3) Browsing the Demo Application
---------------------------------
-
-Congratulations! You're now ready to use Symfony.
-
-From the `config.php` page, click the "Bypass configuration and go to the
-Welcome page" link to load up your first Symfony page.
-
-You can also use a web-based configurator by clicking on the "Configure your
-Symfony Application online" link of the `config.php` page.
-
-To see a real-live Symfony page in action, access the following page:
-
-    web/app_dev.php/demo/hello/Fabien
-
-4) Getting started with Symfony
--------------------------------
-
-This distribution is meant to be the starting point for your Symfony
-applications, but it also contains some sample code that you can learn from
-and play with.
-
-A great way to start learning Symfony is via the [Quick Tour][4], which will
-take you through all the basic features of Symfony2.
-
-Once you're feeling good, you can move onto reading the official
-[Symfony2 book][5].
-
-A default bundle, `AcmeDemoBundle`, shows you Symfony2 in action. After
-playing with it, you can remove it by following these steps:
-
-  * delete the `src/Acme` directory;
-
-  * remove the routing entry referencing AcmeDemoBundle in `app/config/routing_dev.yml`;
-
-  * remove the AcmeDemoBundle from the registered bundles in `app/AppKernel.php`;
-
-  * remove the `web/bundles/acmedemo` directory;
-
-  * empty the `security.yml` file or tweak the security configuration to fit
-    your needs.
-
-What's inside?
----------------
-
-The Symfony Standard Edition is configured with the following defaults:
+This light boilerplate is configured with the following defaults:
 
   * Twig is the only configured template engine;
 
-  * Doctrine ORM/DBAL is configured;
+  * [Twitter Bootstrap][17] : default for the base twig, we are in 21st century now
 
-  * Swiftmailer is configured;
+  * [DokudokiBundle][18] : A full-schemaless-database-layer for MongoDB
 
-  * Annotations for everything are enabled.
+  * It features an auto-installer : after the first install, a script will
+    create a file named after your server name
+    and asks you some parameters (MongoDB server, locale etc...)
+
+  * It has a default security route and login form. The provider is hardcoded in security.yml.
+    See the documentation of the [SecurityBundle][9] to change it.
+
+  * It adds a configuration for multiple developers with a parameter
+    named "developer.name" in dev environment.
 
 It comes pre-configured with the following bundles:
 
   * **FrameworkBundle** - The core Symfony framework bundle
 
-  * [**SensioFrameworkExtraBundle**][6] - Adds several enhancements, including
-    template and routing annotation capability
-
-  * [**DoctrineBundle**][7] - Adds support for the Doctrine ORM
-
   * [**TwigBundle**][8] - Adds support for the Twig templating engine
 
   * [**SecurityBundle**][9] - Adds security by integrating Symfony's security
     component
-
-  * [**SwiftmailerBundle**][10] - Adds support for Swiftmailer, a library for
-    sending emails
 
   * [**MonologBundle**][11] - Adds support for Monolog, a logging library
 
@@ -144,16 +78,11 @@ It comes pre-configured with the following bundles:
   * **SensioDistributionBundle** (in dev/test env) - Adds functionality for
     configuring and working with Symfony distributions
 
-  * [**SensioGeneratorBundle**][13] (in dev/test env) - Adds code generation
-    capabilities
-
-  * **AcmeDemoBundle** (in dev/test env) - A demo bundle with some example
-    code
-
 All libraries and bundles included in the Symfony Standard Edition are
 released under the MIT or BSD license.
 
 Enjoy!
+=======
 
 [1]:  http://symfony.com/doc/2.3/book/installation.html
 [2]:  http://getcomposer.org/
@@ -168,3 +97,8 @@ Enjoy!
 [11]: http://symfony.com/doc/2.3/cookbook/logging/monolog.html
 [12]: http://symfony.com/doc/2.3/cookbook/assetic/asset_management.html
 [13]: http://symfony.com/doc/2.3/bundles/SensioGeneratorBundle/index.html
+[16]: http://en.wikipedia.org/wiki/Inner-platform_effect
+[17]: http://twitter.github.com/bootstrap/
+[18]: https://github.com/Trismegiste/DokudokiBundle
+[19]: http://www.joelonsoftware.com/items/2009/09/23.html
+[20]: http://www.universetoday.com/13794/the-best-engineering-tool-in-space-duct-tape/
