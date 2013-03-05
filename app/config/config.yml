@@ -22,8 +22,12 @@ framework:
 
 # Twig Configuration
 twig:
-    debug:            "%kernel.debug%"
-    strict_variables: "%kernel.debug%"
+    debug:            %kernel.debug%
+    strict_variables: %kernel.debug%
+    form:
+        resources:
+            - 'TrismegisteFrontBundle:theme:form_errors.html.twig'
+            - 'TrismegisteFrontBundle:theme:form_item.html.twig'
 
 # Assetic Configuration
 assetic:
