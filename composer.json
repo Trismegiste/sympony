@@ -1,6 +1,6 @@
 {
     "name": "trismegiste/sympony",
-    "description": "A \"Symfony Non-Standard Edition\" distribution",
+    "description": "My fat-free \"Symfony Non-Standard Edition\" distribution",
     "autoload": {
         "psr-0": { "": "src/" }
     },
