@@ -28,18 +28,18 @@
         {% endblock %}
 
         <div class="container">
-            {% if app.session.hasFlash('notice') %}
+            {% for flashMessage in app.session.flashbag.get('notice') %}
             <div class="alert alert-success">
-                {{ app.session.flash('notice') }}
+                {{ flashMessage }}
             </div>
-            {% endif %}
+            {% endfor %}
 
-            {% if app.session.hasFlash('warning') %}
-            <div class="alert alert-error">
-                {{ app.session.flash('warning') }}
+            {% for flashMessage in app.session.flashbag.get('warning') %}
+            <div class="alert error-error">
+                {{ flashMessage }}
             </div>
-            {% endif %}
-
+            {% endfor %}
+                
             {% block content %}{% endblock %}
             <hr>
             <footer>
