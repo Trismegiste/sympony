@@ -10,13 +10,13 @@ When you need to start a project in 15 seconds, use this release.
 It does not include heavy & slow components like Doctrine or Swiftmailer.
 
 All components extending Annotations are removed because it is a known
-anti-pattern : the [Inner-platform Effect][16]
+anti-pattern : the [Inner-plateform Effect][16]
 
 ## Installing this edition
 
 ### With Composer
 
-    php composer.phar create-project trismegiste/sympony MyApp 2.2.x-dev
+    php composer.phar create-project trismegiste/sympony MyApp 2.3.x-dev
 
 ## Start hacking
 This edition is intended to be a **seed** to grow your own project very fast !
@@ -74,19 +74,23 @@ It comes pre-configured with the following bundles:
   * **SensioDistributionBundle** (in dev/test env) - Adds functionality for
     configuring and working with Symfony distributions
 
-All libraries and bundles included in the Symfony Standard Edition are
-released under the MIT or BSD license.
 
 Enjoy!
+=======
 
-[1]:  http://symfony.com/doc/master/book/installation.html
+[1]:  http://symfony.com/doc/2.3/book/installation.html
 [2]:  http://getcomposer.org/
-[5]:  http://symfony.com/doc/master/index.html
-[7]:  http://silex.sensiolabs.org/
-[8]:  http://symfony.com/doc/master/book/templating.html
-[9]:  http://symfony.com/doc/master/book/security.html
-[11]: http://symfony.com/doc/master/cookbook/logging/monolog.html
-[12]: http://symfony.com/doc/master/cookbook/assetic/asset_management.html
+[3]:  http://symfony.com/download
+[4]:  http://symfony.com/doc/2.3/quick_tour/the_big_picture.html
+[5]:  http://symfony.com/doc/2.3/index.html
+[6]:  http://symfony.com/doc/2.3/bundles/SensioFrameworkExtraBundle/index.html
+[7]:  http://symfony.com/doc/2.3/book/doctrine.html
+[8]:  http://symfony.com/doc/2.3/book/templating.html
+[9]:  http://symfony.com/doc/2.3/book/security.html
+[10]: http://symfony.com/doc/2.3/cookbook/email.html
+[11]: http://symfony.com/doc/2.3/cookbook/logging/monolog.html
+[12]: http://symfony.com/doc/2.3/cookbook/assetic/asset_management.html
+[13]: http://symfony.com/doc/2.3/bundles/SensioGeneratorBundle/index.html
 [16]: http://en.wikipedia.org/wiki/Inner-platform_effect
 [17]: http://twitter.github.com/bootstrap/
 [18]: https://github.com/Trismegiste/DokudokiBundle
