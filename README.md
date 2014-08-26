@@ -46,7 +46,8 @@ This light boilerplate is configured with the following defaults:
 
   * It features an auto-installer : after the first install, a script will
     create a file named after your server name
-    and asks you some parameters (MongoDB server, locale etc...)
+    and asks you some parameters (MongoDB server, locale etc...). 
+    See [trismegiste/symfony-prelude][14]
 
   * It has a default security route and login form. The provider is hardcoded in security.yml.
     See the documentation of the [SecurityBundle][9] to change it.
@@ -76,7 +77,6 @@ It comes pre-configured with the following bundles:
 
 
 Enjoy!
-=======
 
 [1]:  http://symfony.com/doc/2.3/book/installation.html
 [2]:  http://getcomposer.org/
@@ -91,6 +91,7 @@ Enjoy!
 [11]: http://symfony.com/doc/2.3/cookbook/logging/monolog.html
 [12]: http://symfony.com/doc/2.3/cookbook/assetic/asset_management.html
 [13]: http://symfony.com/doc/2.3/bundles/SensioGeneratorBundle/index.html
+[14]: https://github.com/Trismegiste/symfony-prelude
 [16]: http://en.wikipedia.org/wiki/Inner-platform_effect
 [17]: http://twitter.github.com/bootstrap/
 [18]: https://github.com/Trismegiste/DokudokiBundle

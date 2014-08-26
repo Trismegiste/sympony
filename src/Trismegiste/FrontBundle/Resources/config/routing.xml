@@ -12,8 +12,4 @@
         <default key="_controller">TrismegisteFrontBundle:Default:about</default>
     </route>
 
-    <route id="trismegiste_sample_create" pattern="/sample/create">
-        <default key="_controller">TrismegisteFrontBundle:CRUD:create</default>
-    </route>
-
 </routes>
