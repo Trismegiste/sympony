@@ -10,7 +10,7 @@ When you need to start a project in 15 seconds, use this release.
 It does not include heavy & slow components like Doctrine or Swiftmailer.
 
 All components extending Annotations are removed because it is a known
-anti-pattern : the [Inner-plateform Effect][16]
+anti-pattern : the [Inner-platform Effect][16]
 
 ## Installing this edition
 
